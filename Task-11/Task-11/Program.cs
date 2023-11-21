@@ -6,7 +6,7 @@ internal class Program
     private static void Main(string[] args)
     {
         bool isMenu = true;
-        int y = 1;
+       
         ArrayList arrayList = new ArrayList();
 
         void Dialog()
@@ -18,7 +18,7 @@ internal class Program
             {
                 case "Yes":
                     isMenu = true;
-                    y++;
+                
                     break;
 
                 case "No":
@@ -28,13 +28,11 @@ internal class Program
         }
 
         void AddArray()
-        {
-            for (int i = 0; i < y; i++)
-            {
+      
                 Console.Write("Enter a name:");
                 string name = Console.ReadLine();
                 arrayList.Add(name);
-            }
+       
 
             Dialog();
         }
